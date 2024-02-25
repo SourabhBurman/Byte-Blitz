@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import {
   Button,
@@ -25,7 +25,7 @@ export function Sidenav({  routes }) {
   //logout functionality---------------
 
   const usedispatch = useDispatch();
-
+  const navigate = useNavigate();
   const handleLogout = (e) => {
     e.preventDefault();
     const emptyObj = {
@@ -33,7 +33,7 @@ export function Sidenav({  routes }) {
       userDetails: {}
     }
     usedispatch(setDataIntoStore(emptyObj));
-    window.location.href = '/login';
+    navigate('/login');
   }
   //logout functionality---------------
 
