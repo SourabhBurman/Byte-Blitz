@@ -27,7 +27,7 @@ const SignupPage = () => {
   const toast = useToast();
   const navigate = useNavigate();
 
-  const url = "https://quaint-tank-top-lion.cyclic.app/Users/register/";
+  const url = "https://embarrassed-outfit-eel.cyclic.app/Users/register/";
 
   const handleSubmit = (e) => {
     e.preventDefault();

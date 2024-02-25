@@ -23,7 +23,7 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const url = "https://quaint-tank-top-lion.cyclic.app/Users/login/";
+  const url = "https://embarrassed-outfit-eel.cyclic.app/Users/login/";
   
 
   const handleSubmit = (e) => {

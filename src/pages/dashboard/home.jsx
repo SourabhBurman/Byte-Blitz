@@ -15,8 +15,8 @@ export function Home() {
   const [quizzes, setQuizzes] = useState([])
   const [value, setValue] = React.useState("");
   useEffect(() => {
-    axios.get(`https://quaint-tank-top-lion.cyclic.app/quizzes?language=${value || ""}`).then(res => setQuizzes(res.data.quiz)).catch(err => console.log(err))
-  }, []);
+    axios.get(`https://embarrassed-outfit-eel.cyclic.app/quizzes?language=${value || ""}`).then(res => setQuizzes(res.data.quiz)).catch(err => console.log(err))
+  }, [value]);
 
   return (
     <div className="mt-12">

@@ -12,7 +12,7 @@ function QuizResult({ score,language, totalScore, tryAgain }) {
             let userInfo = userData.userDetails;
             console.log(userInfo._id);
     
-            const response = await fetch(`https://quaint-tank-top-lion.cyclic.app/Users/${userInfo._id}`, {
+            const response = await fetch(`https://embarrassed-outfit-eel.cyclic.app/Users/${userInfo._id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-type": "application/json",

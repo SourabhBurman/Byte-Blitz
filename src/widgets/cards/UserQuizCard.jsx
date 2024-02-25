@@ -28,7 +28,7 @@ const navigate = useNavigate();
   const startQuiz = async (language)=> {
     try{
       console.log(language);
-      const res = await axios.post(`http://localhost:8000/questions`,{language})
+      const res = await axios.post(`https://embarrassed-outfit-eel.cyclic.app/questions`,{language})
       dispatch(setQuizQuestion(res.data.questions));
       navigate('/quiz');
     } catch(err){

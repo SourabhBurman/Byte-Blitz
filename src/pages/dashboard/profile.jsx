@@ -38,7 +38,7 @@ export function Profile() {
     axios.patch()
   }
   useEffect(()=> {
-     axios.get(`https://quaint-tank-top-lion.cyclic.app/Users/${userInfo._id}`,{
+     axios.get(`https://embarrassed-outfit-eel.cyclic.app/Users/${userInfo._id}`,{
       headers:{
         Authorization : `Bearer ${userData.token}`
       }

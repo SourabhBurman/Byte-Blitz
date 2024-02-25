@@ -17,14 +17,14 @@ import { setQuizQuestion } from '@/redux/userActionAndReducer/actions';
 import { useNavigate } from 'react-router-dom';
 
 function QuizCard({obj}) {
-  const [logo,setLogo] = useState(`https://skillicons.dev/icons?i=${obj.language.toLowerCase()}&theme=dark`);
+  console.log(obj)
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(!open);
 const dispatch = useDispatch();
 const navigate = useNavigate();
   const startQuiz = async (language)=> {
     try{
-      const res = await axios.post(`https://quaint-tank-top-lion.cyclic.app/questions`,{language})
+      const res = await axios.post(`https://embarrassed-outfit-eel.cyclic.app/questions`,{language})
       dispatch(setQuizQuestion(res.data.questions));
       navigate('/quiz');
     } catch(err){
@@ -68,7 +68,7 @@ const navigate = useNavigate();
       color="transparent"
       className="m-0 flex items-center justify-between p-4">
       <img
-        src= {logo}
+        src= {`https://skillicons.dev/icons?i=${obj.language.toLowerCase()}&theme=dark`}
         alt="ui/ux review check"
         className="w-24 m-auto"
 
