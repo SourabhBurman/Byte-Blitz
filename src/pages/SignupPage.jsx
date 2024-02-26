@@ -63,7 +63,7 @@ const SignupPage = () => {
                 isClosable: true,
               });
 
-              navigate('/login');
+              navigate('/');
             })
             .catch(err => {
               toast({
@@ -78,7 +78,7 @@ const SignupPage = () => {
 
   const handleLoginClick = () => {
     // Navigate to the login page
-    navigate('/login');
+    navigate('/');
   };
 
   return (

@@ -29,7 +29,7 @@ function QuizResult({ score,language, totalScore, tryAgain }) {
         } catch(err) {
             console.log(err);
         }
-        navigate('/dashboard/home');
+        navigate('/dashboard/profile');
     };
 
     return (
@@ -58,7 +58,7 @@ function QuizResult({ score,language, totalScore, tryAgain }) {
     onClick={goToDashboard}
     _hover={{ color: 'black', bg: 'gray.200' }}
 >
-    Dashboard
+    Submit
 </Button>
 
             </Box>

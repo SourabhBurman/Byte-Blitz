@@ -33,7 +33,7 @@ export function Sidenav({  routes }) {
       userDetails: {}
     }
     usedispatch(setDataIntoStore(emptyObj));
-    navigate('/login');
+    navigate('/');
   }
   //logout functionality---------------
 

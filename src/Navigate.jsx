@@ -10,10 +10,10 @@ import Quiz from './pages/dashboard/Quiz';
 function Navigater() {
   return (
     <Routes>
-      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Login />} />
       <Route path="/signuppage" element={<SignupPage />} />
       <Route path="/dashboard/*" element={<Dashboard />} />
-      <Route path="/" element={<Navigate to="/login" />} /> {/* Redirect "/" to "/login" */}
+      {/* <Route path="/" element={<Navigate to="/login" />} /> Redirect "/" to "/login" */}
       <Route path="/quiz" element={<Quiz/>} /> 
     </Routes>
   )

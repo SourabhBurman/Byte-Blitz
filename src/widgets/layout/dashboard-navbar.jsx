@@ -61,16 +61,7 @@ export function DashboardNavbar() {
         </div>
         <div className="flex items-center">
           <div className="mr-auto md:mr-4 md:w-56">
-          <div className="w-58">
-      <Select label="Select Language">
-        <Option>Select Language</Option>
-        <Option>JavaScript</Option>
-        <Option>Java</Option>
-        <Option>HTML</Option>
-        <Option>CSS</Option>
-        <Option>React</Option>
-      </Select>
-    </div>
+        
           </div>
           <IconButton
             variant="text"
